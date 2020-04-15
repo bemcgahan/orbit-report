@@ -14,5 +14,9 @@ export class Satellite {
     }
     
 
-    ngOnInit(){}
+    shouldShowWarning(){
+        if(this.type === 'Space Debris') {return true;}
+        else {return false;}
+    }
+
 }
